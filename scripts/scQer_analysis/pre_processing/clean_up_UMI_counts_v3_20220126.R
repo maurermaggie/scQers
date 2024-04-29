@@ -84,9 +84,3 @@ for (ind in seq(n_cBC_mBC)){
 df_get_bc_v2_2 <- df_get_bc_v2 %>% transform(filtered_corrected_UMIs=corrected_UMI)
 df_out <- df_get_bc_v2_2 %>% select(c("cBC",variable_name,"n_reads_filtered","n_UMI_filtered","filtered_corrected_UMIs"))
 write.table(df_out,file_name_corrected, quote=FALSE, row.names=FALSE, col.names=TRUE, sep="\t")
-
-
-
-
-
-
