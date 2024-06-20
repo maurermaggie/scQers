@@ -15,12 +15,12 @@ Both will require you to install micromamba and follow the instructions in their
 
 ### Steps:
 1. CellRanger Count
-   1.  Output: error-corrected cell barcodes
+   1. Output: error-corrected cell barcodes
 2. Get_barcodes script
    1.  Count UMIs observed for each oBC/ mBC
    2.  Filter our chimeric UMIs
 3. Clean_umi script
-   1.  QC UMIs (remove all composed only of G's, filter on Hamming distance)
+   1. QC UMIs (remove all composed only of G's, filter on Hamming distance) 
 
 ### Output
 1. Text files within the "outs" folder:
