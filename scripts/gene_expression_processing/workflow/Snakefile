@@ -16,9 +16,12 @@ print('Running on samples:{}'.format(IDs))
 
 ###########################################---Step 1: Define Rules--##############################################################
 include: 'rules/cellranger.smk'
+include: 'rules/seurat.smk'
 
 rule all:
     input:
-        expand(config["output_directory"] + "/" + "{ID}" + "/outs/possorted_genome_bam.bam", ID = IDs)
+        expand(config["output_directory"] + "/" + "{ID}" + "/outs/possorted_genome_bam.bam", ID = IDs),
+        expand(config["output_directory"] + "/" + "{ID}" + "/outs/seurat_processed/barcodes.tsv", ID = IDs),
+        expand(config["output_directory"] + "/" + "{ID}" + "/outs/raw_feature_bc_matrix/barcodes.tsv.gz", ID = IDs)
 
         
