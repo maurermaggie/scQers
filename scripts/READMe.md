@@ -1,7 +1,9 @@
 # Pipeline Overview
 
 The pipeline to process MPRA data consists of the two following folders: get_barcode_counts and gene_expression_processing. 
-Both will require you to install micromamba and follow the instructions in the corresponding READMes. 
+Both will require you to install micromamba and follow the instructions in their corresponding READMes. 
+
+![Pipeline_Overview](https://github.com/maurermaggie/scQers/blob/main/images/Pipeline_Overview.png?raw=true)
 
 ## get_barcode_counts
 
