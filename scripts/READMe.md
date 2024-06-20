@@ -48,5 +48,4 @@ Found within the "outs/seurat_processed" folder
    1. First row: # of RNA reads
    2. Second row: Corresponding barcode row in Barcodes.tsv
    3. Third row: Corresponding gene row in Genes.tsv
-
 ![Output](https://github.com/maurermaggie/scQers/blob/main/images/Gene_expression_pipeline_output.png?raw=true)
