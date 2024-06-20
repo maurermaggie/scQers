@@ -22,12 +22,12 @@ Both will require you to install micromamba and follow the instructions in their
 3. Clean_umi script
   1.  QC UMIs (remove all composed only of G's, filter on Hamming distance)
 
-### gene_expression_processing Pipeline
+### Output
 1. Text files within the "outs" folder:
    1. oBC_get_bc_v3_no_G_cleaned_UMI.txt
    2. mBC_get_bc_v3_no_G_cleaned_UMI.txt
    
-## scQers
+## gene_expression_processing Pipeline
 
 ### Inputs
 1. 2 fastqs: the forward and revere reads of the 10x gene expression output
