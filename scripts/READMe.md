@@ -5,7 +5,7 @@ Both will require you to install micromamba and follow the instructions in their
 
 ![Pipeline_Overview](https://github.com/maurermaggie/scQers/blob/main/images/Pipeline_Overview.png?raw=true)
 
-## get_barcode_counts
+## get_barcode_counts Pipeline
 
 ### Inputs:
 1. 4 fastqs: the forward and reverse reads of the oBC and mBC. 
@@ -19,7 +19,7 @@ Both will require you to install micromamba and follow the instructions in their
 3. Clean_umi script
   1.  QC UMIs (remove all composed only of G's, filter on Hamming distance)
 
-### Output
+### gene_expression_processing Pipeline
 1. Text files within the "outs" folder:
    1. oBC_get_bc_v3_no_G_cleaned_UMI.txt
    2. mBC_get_bc_v3_no_G_cleaned_UMI.txt
@@ -48,3 +48,5 @@ Found within the "outs/seurat_processed" folder
    1. First row: # of RNA reads
    2. Second row: Corresponding barcode row in Barcodes.tsv
    3. Third row: Corresponding gene row in Genes.tsv
+
+![Output](https://github.com/maurermaggie/scQers/blob/main/images/Gene_expression_pipeline_output.png?raw=true)
