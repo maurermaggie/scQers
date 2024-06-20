@@ -11,7 +11,8 @@ rule cellranger:
         output_directory = config["output_directory"],
         output_directory_ids = config["output_directory"] + "/" + "{ID}"
     output:
-        output_file = (config["output_directory"] + "/" + "{ID}" + "/outs/possorted_genome_bam.bam"),
+        output_file = config["output_directory"] + "/" + "{ID}" + "/outs/possorted_genome_bam.bam",
+        output_file2 = config["output_directory"] + "/" + "{ID}" + "/outs/raw_feature_bc_matrix/barcodes.tsv.gz"
     shell:"""
         
         #Snakemake automatically makes missing output directories. CellRanger, however, errors out if it does not make the output directory.
@@ -44,5 +45,5 @@ rule cellranger:
         #Snakemake will error out if you do not do something with the output file in the rule. 
         #To get around this, I ls the output file
         ls {output.output_file}
-
+        ls {output.output_file2}
         """
